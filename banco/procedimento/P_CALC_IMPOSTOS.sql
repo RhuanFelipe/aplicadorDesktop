@@ -1,0 +1,35 @@
+
+CREATE OR REPLACE PROCEDURE I_MDLOG.P_CALC_IMPOSTOS wrapped 
+a000000
+b2
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+1edb 363
+uFSk7DC3fSOcvsO3Oc6AUXWLvmswg81Y10qDfC+pEv9eXW/I2MVQBQnFWJGmDPR55LdR7c7p
+M+6x3OFdZGI2LE0881sUBZpHtLdY+nWZpzXiRNtokVOFdD6ttxj6RElAJ/LAboRoqufwC+XZ
+pOeOlYIcgBmCNa/yyRV4WJmn9pXkHnGkRotHFjWfo1jUqadxOPekLVRyF/bZ71sWxqP4cMHK
+lGtHJBNBIegnXRQ///Nl36sINWGY93/lBMxVc7nIF7gXPoJy4ckRApke0W7SgHUrcs3wbIas
+bmBwll2jF4TCCfJDjXErtPX3+YVTV7KBzbcXN5zz95+oY1QxU/hKiFs3gmiSIx0Zov9ckLDA
+yASXpNGlKntZLvdXHT47XnAxTwkSWAPpT3l6LNuc0eVYJWBG/4kMX1TYJSFMSFGkdufwip7C
+LKKceW7drfQ98xFiMH7uE5CbC43it9DQtNSzwGt1UqWVLBXV8iUhk9GQP2mFCt3fw0hbm5CP
+M2Psb+3sqEU53Oe1Ovbmkg+RZBfsLseYs7kPTgq/nSrxtFajb4qlkJzY/BcgHcO9bobp0lpw
+fusAm9MDkpMcAChZM72bq1zaPawst4BJ0EGxpfxShbf6eJzpQTOlKx3KDwfgXiSbMJdVX9BB
+IgFMjoWwLD81cBUAndkpkOkFc0jHLliF/aUJTKgP3ejSNZZ+mx82M8VM0kWr+Wrzaj5bcKb5
+H90ztrICAHTdpnS7wFeJnDmHRRhrkp7dpnTduuqRT1NATgAudFcX3ZQ4Ltk6xB7PgjI2qCAQ
+ffQKUcR5bkh7xfBIz/y9s9KwirhLqrtlBIoPkPVbLKrs386LN0RIksSuQXebDA==
+
+/

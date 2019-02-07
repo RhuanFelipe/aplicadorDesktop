@@ -1,0 +1,35 @@
+
+CREATE OR REPLACE PROCEDURE INFOMLOG.PCPL_PRODUTOS_PEND_FORNEC wrapped 
+a000000
+b2
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+abcd
+7
+fdc 33f
+3jeEu9U3vryrvIOFDYskaZ5lxvswg+2cVUqDfC8CEtdeVPzp043ya+URbIPy1BxU9qQFHiwN
+7Zttimq/m4R/zIwGFG2Wyi//qMdlQa5/K4KPr+F/R4UR2Iuv9h+yFhyug8VwolMunecxfkq4
+b+UAIdxTFukLEdLS5/FFwkteHAVRe6DA5iMAr2yJHR4I1/ZlPhQBqtEWrz4HFnAF9Lu6Js12
+KW3BcKkXHldXyUSMe7qh8ERbl16Ot/y1/CU3NosIhbv+D5h1ZgODreIxA2nBYvpT4Z0FPYKG
+wGuoAbAggmrahUSxXErWZJ2Kt49a4iEuuSLN+vzoscsqIAMD/Jd2qyswadHr4P4obU3ck9HN
+EJ1SiOwOzamYzz8i+7m1ZS5mGGe80PhrRU7lTQZMlorxTLo/TdFAsZZOslwR3fxraLoFCCbP
+TvZj9M1omzISNYBL1sS2IqCQMRkGOc3Vm81bOm4XQjGPEDAMhn5V1FhihZt+MnxdzhInywDJ
+dPBAhfGIJfuZP398h31BVFPMjsx7wPw+mz5wShydq/npRD7a8AY+HkU1M6Y8YjdVfoNi3VV6
+GWPdmM35VuBWKS2UVMQ2n8fexHS/9qVIbI9rLhAMNPjb9gu55kojkCZutPDUIFQYU9uSFCm+
+LEdSdUcRh01msScAU51iVbHG+IPPnazHIXIcKv+LgscBEfFuAqvoE2DOejEPUrwbYgrV8guk
+PDI90korDEIaijpQqlEV++gLFIuD/GZUCnk6CF5MsZhiGRYzonkphxTrduWxsQYQN5a3cu6V
+pZmODszWzIa+KcYzapgkhQ8d3g==
+
+/
