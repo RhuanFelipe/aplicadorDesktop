@@ -1,11 +1,10 @@
-
-/* ************************************************************************************
+/**************************************************************************************
 Schema       : DBAMDATA
 Analista     : Lenilton Marques
 Data         : 09 de novembro de 2018
 Descricao    : Criação de campos no cadastro de configurações de impostos
 CRC          : 75386
-************************************************************************************* */
+**************************************************************************************/
 ALTER TABLE INTEGRA.TI045_NF_ENTRADA ADD ( TI045_BASE_PIS_ISENTO     NUMBER(15,2) );
 ALTER TABLE INTEGRA.TI045_NF_ENTRADA ADD ( TI045_BASE_PIS_RETIDO     NUMBER(15,2) );
 ALTER TABLE INTEGRA.TI045_NF_ENTRADA ADD ( TI045_BASE_PIS_NORMAL     NUMBER(15,2) );

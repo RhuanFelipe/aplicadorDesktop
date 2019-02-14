@@ -37,7 +37,7 @@ import javax.swing.JOptionPane;
  *
  * @author rhuan.silva
  */
-public class TelaAplicacao extends javax.swing.JFrame {
+public class TelaAplicacao extends javax.swing.JFrame{
 
     Connection conexao = null;
     PreparedStatement pst = null;
@@ -91,23 +91,22 @@ public class TelaAplicacao extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(124, 124, 124)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(145, 145, 145)
-                        .addComponent(jButton2)))
-                .addContainerGap(138, Short.MAX_VALUE))
+                        .addGap(30, 30, 30)
+                        .addComponent(jButton2))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(109, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(105, 105, 105)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(jButton2)
-                .addGap(107, 107, 107))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(416, 339));
@@ -231,6 +230,7 @@ public class TelaAplicacao extends javax.swing.JFrame {
     /**
      * executar script de aplicação.
      */
+    
     public void execSqlScript(File inputFile) throws IOException {
         conexao = Conexao.conector(TelaLogin.alias, TelaLogin.usuario, TelaLogin.senha);
         // Delimiter
@@ -250,40 +250,42 @@ public class TelaAplicacao extends javax.swing.JFrame {
         }
         // Loop through the SQL file statements 
         Statement currentStatement = null;
-
-        while(scanner.hasNext()) {
-
-            // Get statement 
-            String rawStatement = scanner.next();
-            int sqlConut = rawStatement.length();
-            try {
-                if (sqlConut > 2) {
-                    // Execute statement
-                    currentStatement = conexao.createStatement();
-                    currentStatement.execute(rawStatement);
-                    tratarMsg(rawStatement);
-                    msgErro += this.tratarMsg + "\r\n";
-                }
-            } catch (SQLException e) {
-                //linha += rawStatement;
-                msgErro += e + "\r\n";
-                e.printStackTrace();
-            } finally {
-                // Release resources
-                if (currentStatement != null) {
-                    try {
-                        currentStatement.close();
+        try {
+              while (scanner.hasNext()) {
+                // Get statement 
+                String rawStatement = scanner.next();
+                int sqlConut = rawStatement.length();
+                try {
+                        if (sqlConut > 2) {
+                            // Execute statement
+                            currentStatement = conexao.createStatement();
+                            currentStatement.execute(rawStatement);
+                            tratarMsg(rawStatement);
+                            msgErro += this.tratarMsg + "\r\n";
+                        }
                     } catch (SQLException e) {
+                        //linha += rawStatement;
+                        msgErro += e + "\r\n";
                         e.printStackTrace();
+                    } finally {
+                        // Release resources
+                        if (currentStatement != null) {
+                            try {
+                                currentStatement.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        currentStatement = null;
+                        //System.out.println(sqlConut);
                     }
-                }
-                currentStatement = null;
-                //System.out.println(sqlConut);
-            }
 
-            linhaExec = br.readLine();
-            scanner.close();
+                linhaExec = br.readLine();
+            }
+        } catch (Exception e) {
+            System.out.println(e.fillInStackTrace());
         }
+      
         //logMsg = inputFile + "\r\n" +linha +"\r\n"+  msgErro;
         logMsg = inputFile + "\r\n \r\n" + msgErro;
         FileWriter arquivo;
@@ -298,7 +300,9 @@ public class TelaAplicacao extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        scanner.close();
         //JOptionPane.showMessageDialog(null, logMsg);
+        
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
